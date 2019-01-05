@@ -11,7 +11,6 @@
 		3F30473921E0A056008323C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F30473721E0A056008323C4 /* Main.storyboard */; };
 		3F30473C21E0A056008323C4 /* Planets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F30473A21E0A056008323C4 /* Planets.xcdatamodeld */; };
 		3F30473E21E0A057008323C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F30473D21E0A057008323C4 /* Assets.xcassets */; };
-		3F30474121E0A057008323C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F30473F21E0A057008323C4 /* LaunchScreen.storyboard */; };
 		3F30474C21E0A058008323C4 /* PlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30474B21E0A058008323C4 /* PlanetsTests.swift */; };
 		3F30475721E0A058008323C4 /* PlanetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30475621E0A058008323C4 /* PlanetsUITests.swift */; };
 		3F30477721E0A65F008323C4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30477621E0A65F008323C4 /* Constant.swift */; };
@@ -23,6 +22,7 @@
 		3F30478821E0AA5F008323C4 /* PlanetDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30478721E0AA5F008323C4 /* PlanetDataModel.swift */; };
 		3F30478A21E0AE6A008323C4 /* PlanetDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30478921E0AE6A008323C4 /* PlanetDataManager.swift */; };
 		3F30478D21E0B0B8008323C4 /* PlanetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F30478C21E0B0B8008323C4 /* PlanetTableViewCell.swift */; };
+		3F30479021E0CA5F008323C4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F30478F21E0CA5F008323C4 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		3F30473821E0A056008323C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F30473B21E0A056008323C4 /* Planets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planets.xcdatamodel; sourceTree = "<group>"; };
 		3F30473D21E0A057008323C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F30474021E0A057008323C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F30474221E0A057008323C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F30474721E0A058008323C4 /* PlanetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F30474B21E0A058008323C4 /* PlanetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTests.swift; sourceTree = "<group>"; };
@@ -65,6 +64,7 @@
 		3F30478721E0AA5F008323C4 /* PlanetDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataModel.swift; sourceTree = "<group>"; };
 		3F30478921E0AE6A008323C4 /* PlanetDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDataManager.swift; sourceTree = "<group>"; };
 		3F30478C21E0B0B8008323C4 /* PlanetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTableViewCell.swift; sourceTree = "<group>"; };
+		3F30478F21E0CA5F008323C4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,15 +115,14 @@
 		3F30473221E0A056008323C4 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				3F30478E21E0CA09008323C4 /* StoryBoard */,
 				3F30478021E0A84F008323C4 /* ViewControllers */,
 				3F30477D21E0A724008323C4 /* Service */,
 				3F30477821E0A6AC008323C4 /* DataModel */,
 				3F30477321E0A59F008323C4 /* Extension */,
 				3F30477221E0A53C008323C4 /* Common */,
 				3F30473321E0A056008323C4 /* AppDelegate.swift */,
-				3F30473721E0A056008323C4 /* Main.storyboard */,
 				3F30473D21E0A057008323C4 /* Assets.xcassets */,
-				3F30473F21E0A057008323C4 /* LaunchScreen.storyboard */,
 				3F30474221E0A057008323C4 /* Info.plist */,
 			);
 			path = Planets;
@@ -198,6 +197,15 @@
 				3F30478C21E0B0B8008323C4 /* PlanetTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3F30478E21E0CA09008323C4 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				3F30478F21E0CA5F008323C4 /* Launch Screen.storyboard */,
+				3F30473721E0A056008323C4 /* Main.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +312,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F30474121E0A057008323C4 /* LaunchScreen.storyboard in Resources */,
+				3F30479021E0CA5F008323C4 /* Launch Screen.storyboard in Resources */,
 				3F30473E21E0A057008323C4 /* Assets.xcassets in Resources */,
 				3F30473921E0A056008323C4 /* Main.storyboard in Resources */,
 			);
@@ -383,14 +391,6 @@
 				3F30473821E0A056008323C4 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F30473F21E0A057008323C4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F30474021E0A057008323C4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -519,6 +519,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZJVHH4682;
 				INFOPLIST_FILE = Planets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,6 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AZJVHH4682;
 				INFOPLIST_FILE = Planets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

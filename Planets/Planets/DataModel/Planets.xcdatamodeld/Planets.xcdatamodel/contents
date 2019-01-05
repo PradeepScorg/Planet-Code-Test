@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="FilmMO" representedClassName="FilmMO" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filmsRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlanetMO" inverseName="filmsRelationship" inverseEntity="PlanetMO" syncable="YES"/>
+    </entity>
+    <entity name="PlanetMO" representedClassName="PlanetMO" syncable="YES" codeGenerationType="class">
+        <attribute name="climate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="diameter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="edited" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gravity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orbital_period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rotation_period" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="surface_water" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="terrain" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="filmsRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FilmMO" inverseName="filmsRelationship" inverseEntity="FilmMO" syncable="YES"/>
+        <relationship name="residentRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ResidentMO" inverseName="planetRelationship" inverseEntity="ResidentMO" syncable="YES"/>
+    </entity>
+    <entity name="ResidentMO" representedClassName="ResidentMO" syncable="YES" codeGenerationType="class">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="planetRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PlanetMO" inverseName="residentRelationship" inverseEntity="PlanetMO" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FilmMO" positionX="-192.01171875" positionY="-1.30859375" width="128" height="73"/>
+        <element name="ResidentMO" positionX="-161.46875" positionY="191.78125" width="128" height="73"/>
+        <element name="PlanetMO" positionX="-416.4140625" positionY="11.37109375" width="128" height="253"/>
+    </elements>
+</model>

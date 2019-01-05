@@ -141,7 +141,7 @@ extension PlanetsViewController: UITableViewDataSource {
             if let url = self.nextPage {
                 self.fetchPlanetRecords(url: url)
             } else {
-                self.promptMessage(message: "No more records to show")
+                self.promptMessage(message: "Last page reached.")
             }
         }
         return cell

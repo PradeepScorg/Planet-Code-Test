@@ -21,7 +21,7 @@ class PlanetsTests: XCTestCase {
         }
         
         if (totalCount > 0) {
-            print("Total Records found are   1 : \(totalCount)")
+            print("Total Records found are   2 : \(totalCount)")
         } else {
             print("No Records found")
         }
